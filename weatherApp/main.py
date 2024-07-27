@@ -30,7 +30,7 @@ fetch_button = ctk.CTkButton(app, text="Get Weather", command=get_weather, font=
 fetch_button.pack(pady=10)
 
 # Label to display the weather information
-result_label = ctk.CTkLabel(app, text="", font=("Helvetica", 14), justify='left')
+result_label = ctk.CTkLabel(app, text="", font=("Helvetica", 14), justify='center', anchor='center')
 result_label.pack(pady=20)
 
 # Run the GUI loop

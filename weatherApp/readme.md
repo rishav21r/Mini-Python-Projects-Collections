@@ -64,3 +64,12 @@ This Weather App allows users to enter a city name and get the current weather i
    ```shell
    pip install -r requirements.txt
    ```
+  
+- Make your changes to the codebase.
+- Commit and push your changes to your forked repository.
+
+## Contributing
+Feel free to submit issues and enhancement requests. Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

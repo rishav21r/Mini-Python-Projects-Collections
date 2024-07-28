@@ -67,11 +67,3 @@ The script will print messages to the console indicating:
 
 - Whether duplicate entries were found (and list them if any).
 - Confirmation that the sorted bibliography has been written to the output file.
-
-## Contributing
-
-Feel free to fork this project and submit pull requests with any improvements or additional features you'd like to see!
-
-## License
-
-[Include your chosen license information here]

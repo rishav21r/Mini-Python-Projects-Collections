@@ -12,12 +12,14 @@ Mini-Python-Projects-Collections/
     |──readme.md
     |──input.txt
     |──sorted_output.txt
+    |──requirements.txt
 ```
 
 - `sort_bibliography.py`: The main Python script that performs the sorting and duplicate removal.
 - `readme.md`: This file, containing project information and usage instructions.
 - `input.txt`: The input file containing the unsorted bibliography.
 - `sorted_output.txt`: The output file where the sorted bibliography will be written.
+- `requirements.txt`: A file listing the project's dependencies (currently empty as the project uses only the Python standard library).
 
 ## Functionality
 
@@ -30,18 +32,33 @@ The `sort_bibliography.py` script does the following:
 5. Sorts the remaining references alphabetically (case-insensitive).
 6. Writes the sorted bibliography to the output file.
 
+## Requirements
+
+This project currently uses only Python's standard library, so there are no external dependencies. However, we've included a `requirements.txt` file for future use. To view the requirements, you can cat the file:
+
+```
+cat requirements.txt
+```
+
+If any dependencies are added in the future, you can install them using:
+
+```
+pip install -r requirements.txt
+```
+
 ## Usage
 
 1. Ensure you have Python installed on your system.
 2. Navigate to the `bibliography_sorting` directory.
-3. Prepare your input file (default name: `input.txt`) with the bibliography. The first line should be the "Bibliography" heading, followed by the references.
-4. Run the script using the following command:
+3. (Optional) If there are any dependencies in the future, install them using the command mentioned in the Requirements section.
+4. Prepare your input file (default name: `input.txt`) with the bibliography. The first line should be the "Bibliography" heading, followed by the references.
+5. Run the script using the following command:
 
    ```
    python sort_bibliography.py
    ```
 
-5. The script will process the input file and create a sorted output file (default name: `sorted_output.txt`).
+6. The script will process the input file and create a sorted output file (default name: `sorted_output.txt`).
 
 ## Customization
 
@@ -67,3 +84,11 @@ The script will print messages to the console indicating:
 
 - Whether duplicate entries were found (and list them if any).
 - Confirmation that the sorted bibliography has been written to the output file.
+
+## Contributing
+
+Feel free to fork this project and submit pull requests with any improvements or additional features you'd like to see!
+
+## License
+
+[Include your chosen license information here]

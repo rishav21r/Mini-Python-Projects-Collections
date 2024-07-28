@@ -16,7 +16,8 @@ This Weather App allows users to enter a city name and get the current weather i
 
 ## Screenshot
 
-![Weather App Screenshot](path/to/screenshot.png)
+![Weather App Screenshot 1](./images/screenshot1.png)
+![Weather App Screenshot 2](./images/screenshot2.png)
 
 ## How to Use the App
 

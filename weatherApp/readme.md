@@ -6,6 +6,26 @@ A simple and user-friendly weather application built with Python and `customtkin
 
 This Weather App allows users to enter a city name and get the current weather information, including temperature, weather description, humidity, and wind speed. The application features a graphical user interface (GUI) for ease of use, and it provides clear, formatted weather data directly on the window.
 
+## Project Structure
+
+```
+Mini-Python-Projects-Collections/
+|
+|──weatherApp/
+    |──main.py
+    |──weather_api.py
+    |──weather_display.py
+    |──test_weather.py
+    |──readme.md
+    |──requirements.txt
+```
+- `main.py`: The main script that sets up and runs the GUI application.
+- `weather_api.py`: Contains the function to fetch weather data from the OpenWeatherMap API.
+- `weather_display.py`: Contains the function to format and display the fetched weather data.
+- `test_weather.py`: Unit tests for `fetch_weather` and `display_weather` functions to ensure they work correctly.
+- `readme.md`: The markdown file containing documentation for the project.
+- `requirements.txt`: Lists the dependencies required for the project.
+
 ## Features
 
 - Fetches real-time weather data from the OpenWeatherMap API.

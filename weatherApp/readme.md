@@ -40,3 +40,27 @@ This Weather App allows users to enter a city name and get the current weather i
    ```python
     API_KEY = 'your_api_key_here'
   ```
+- Execute the main script to start the app.
+
+   ```shell
+   python main.py
+   ```
+4. **Using the App**
+- Enter the city name (e.g., "London", "Tokyo") in the input field.
+- Press the "Get Weather" button or hit the "Enter" key to fetch and display the weather data.
+
+## How to Fork the Project
+1. **Fork the Repository**
+   - Click the "Fork" button at the top right corner of the repository page on GitHub. 
+
+2. **Clone the Forked Repository**
+   ```shell
+    git clone https://github.com/your-username/Mini-Python-Projects-Collections.git
+    cd Mini-Python-Projects-Collections/weatherApp
+   ```
+
+3. **Set Up the Environment and Make Changes**
+- Install the required packages.
+   ```shell
+   pip install -r requirements.txt
+   ```

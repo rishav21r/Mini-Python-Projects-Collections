@@ -23,5 +23,20 @@ This Weather App allows users to enter a city name and get the current weather i
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-username/weatherApp.git
-   cd weatherApp
+   git clone https://github.com/your-username/Mini-Python-Projects-Collections.git
+   cd Mini-Python-Projects-Collections/weatherApp
+
+   
+2. **Set Up the Environment**
+- Install the required Python packages.
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. **Run the App**
+
+- Ensure you have your OpenWeatherMap API key.
+- Replace `your_api_key_here` in `weather_api.py` with your actual API key.
+
+   ```python
+    API_KEY = 'your_api_key_here'
+  ```

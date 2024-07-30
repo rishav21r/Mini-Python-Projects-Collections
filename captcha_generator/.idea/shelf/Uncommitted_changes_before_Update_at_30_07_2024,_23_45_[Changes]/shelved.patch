@@ -1,9 +1,0 @@
-Index: requirements.txt
-===================================================================
-diff --git a/requirements.txt b/requirements.txt
-deleted file mode 100644
---- a/requirements.txt	(revision 4c305d1f0285835dc4972f05c48d5dbb712f40e8)
-+++ /dev/null	(revision 4c305d1f0285835dc4972f05c48d5dbb712f40e8)
-@@ -1,1 +0,0 @@
--Pillow==8.4.0
-\ No newline at end of file

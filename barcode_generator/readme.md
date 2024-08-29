@@ -40,3 +40,44 @@ This project requires the `python-barcode` library along with `Pillow` for image
 3. Install the required dependencies using the command mentioned in the Requirements section.
 4. Run the script using the following command:
 
+5. A popup window will appear, prompting you to choose a barcode format and input the data for barcode generation.
+6. The generated barcode image will be saved in the `barcode_images/` directory.
+
+## GUI Screenshots
+
+### 1. Barcode Format Selection
+
+![Barcode Format Selection](images/barcode_format_selection.png)
+
+### 2. Generated Barcode Image
+
+![Generated Barcode](barcode_images/barcode_image.png)
+
+## How it works
+
+1. The script uses `tkinter` to create simple popup windows for user input.
+2. The user selects a barcode format and inputs the corresponding data.
+3. The barcode is generated and saved as an image in the `barcode_images/` directory.
+
+## Customization
+
+You can customize the barcode generation by modifying the following in `barcode_generator.py`:
+
+- Modify the GUI prompts or add validation for specific barcode types.
+- Adjust the default directory where images are saved.
+- Extend the script to support additional barcode formats or input validation.
+
+## Error Handling
+
+The script includes basic error handling:
+
+- It shows an error message if the user inputs an invalid barcode type.
+- Unexpected errors are caught and displayed to the user in a popup window.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

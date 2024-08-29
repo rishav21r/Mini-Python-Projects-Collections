@@ -2,6 +2,7 @@ import barcode
 from barcode.writer import ImageWriter
 import random
 import string
+import os
 
 # Specify the type of barcode you want to generate (e.g., 'code128', 'ean13')
 barcode_type = 'code128'  # You can change this to test other types
@@ -21,6 +22,13 @@ def generate_random_data(barcode_type):
 # Generate the random barcode data
 barcode_data = generate_random_data(barcode_type)
 
+# Define the output directory
+output_dir = 'barcode_images'
+
+# Create the directory if it doesn't exist
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
 try:
     # Print available barcode types
     print("Available barcode types:", barcode.PROVIDED_BARCODES)
@@ -32,8 +40,10 @@ try:
     if barcode_obj is None:
         raise ValueError(f"Failed to create barcode for type '{barcode_type}' with data '{barcode_data}'.")
 
+    # Define the full output file path
+    output_file = os.path.join(output_dir, 'barcode_image')
+
     # Save the barcode as an image file
-    output_file = 'barcode_image'
     barcode_obj.save(output_file)
 
     print(f"Barcode saved as {output_file}.png with data '{barcode_data}'")

@@ -22,9 +22,10 @@ Mini-Python-Projects-Collections/
 
 The `barcode_generator.py` script does the following:
 
-1. Generates barcodes in various formats such as Code128, EAN13, etc.
-2. Saves the generated barcode as an image file (PNG format).
-3. Accepts user input for the type of barcode and data to encode.
+1. Prompts the user to choose a barcode format from a list of available options.
+2. Allows the user to input data for the barcode generation.
+3. Generates the barcode image based on the input.
+4. Saves the generated barcode image in the `barcode_images/` directory.
 
 ## Requirements
 

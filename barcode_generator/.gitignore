@@ -1,0 +1,41 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Byte-compiled / optimized / DLL files
+*.egg-info/
+*.eggs/
+*.manifest
+*.spec
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.wheel
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Generated barcode images
+*.png
+
+# VS Code settings
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# General
+*.log

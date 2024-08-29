@@ -51,7 +51,7 @@ This project requires the `python-barcode` library along with `Pillow` for image
 
 ### 2. Generated Barcode Image
 
-![Generated Barcode](barcode_images/barcode_image.png)
+![Generated Barcode](images/barcode_image.png)
 
 ## How it works
 

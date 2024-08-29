@@ -1,52 +1,68 @@
 import barcode
 from barcode.writer import ImageWriter
-import random
-import string
 import os
+import tkinter as tk
+from tkinter import simpledialog, messagebox
 
-# Specify the type of barcode you want to generate (e.g., 'code128', 'ean13')
-barcode_type = 'code128'  # You can change this to test other types
+# Function to prompt the user to choose a barcode format and input data
+def get_user_input():
+    # Initialize the Tkinter root window
+    root = tk.Tk()
+    root.withdraw()  # Hide the root window
 
-# Generate random data based on the barcode type
-def generate_random_data(barcode_type):
-    if barcode_type == 'ean13':
-        # EAN-13 requires exactly 12 digits
-        return ''.join(random.choices(string.digits, k=12))
-    elif barcode_type == 'code128':
-        # Code128 can include letters, digits, and some special characters
-        length = random.randint(8, 16)  # You can specify a range for the length
-        return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
-    else:
-        raise ValueError(f"Barcode type '{barcode_type}' is not supported for random generation.")
+    # Ask the user to choose a barcode type
+    barcode_type = simpledialog.askstring(
+        title="Barcode Type",
+        prompt=f"Enter the barcode type (e.g., {', '.join(barcode.PROVIDED_BARCODES)}):"
+    )
 
-# Generate the random barcode data
-barcode_data = generate_random_data(barcode_type)
+    # Validate the barcode type
+    if barcode_type not in barcode.PROVIDED_BARCODES:
+        messagebox.showerror("Error", "Invalid barcode type!")
+        return None, None
 
-# Define the output directory
-output_dir = 'barcode_images'
+    # Ask the user to input the barcode data
+    barcode_data = simpledialog.askstring(
+        title="Barcode Data",
+        prompt="Enter the data for the barcode:"
+    )
 
-# Create the directory if it doesn't exist
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
+    return barcode_type, barcode_data
 
-try:
-    # Print available barcode types
-    print("Available barcode types:", barcode.PROVIDED_BARCODES)
+# Function to generate the barcode
+def generate_barcode(barcode_type, barcode_data):
+    # Define the output directory
+    output_dir = 'barcode_images'
 
-    # Create the barcode object
-    barcode_obj = barcode.get(barcode_type, barcode_data, writer=ImageWriter())
+    # Create the directory if it doesn't exist
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-    # Check if barcode_obj is None
-    if barcode_obj is None:
-        raise ValueError(f"Failed to create barcode for type '{barcode_type}' with data '{barcode_data}'.")
+    try:
+        # Create the barcode object
+        barcode_obj = barcode.get(barcode_type, barcode_data, writer=ImageWriter())
 
-    # Define the full output file path
-    output_file = os.path.join(output_dir, 'barcode_image')
+        # Check if barcode_obj is None
+        if barcode_obj is None:
+            raise ValueError(f"Failed to create barcode for type '{barcode_type}' with data '{barcode_data}'.")
 
-    # Save the barcode as an image file
-    barcode_obj.save(output_file)
+        # Define the full output file path
+        output_file = os.path.join(output_dir, 'barcode_image')
 
-    print(f"Barcode saved as {output_file}.png with data '{barcode_data}'")
+        # Save the barcode as an image file
+        barcode_obj.save(output_file)
 
-except Exception as e:
-    print(f"An error occurred: {e}")
+        messagebox.showinfo("Success", f"Barcode saved as {output_file}.png")
+
+    except Exception as e:
+        messagebox.showerror("Error", f"An error occurred: {e}")
+
+# Main function to run the barcode generator
+def main():
+    barcode_type, barcode_data = get_user_input()
+
+    if barcode_type and barcode_data:
+        generate_barcode(barcode_type, barcode_data)
+
+if __name__ == "__main__":
+    main()

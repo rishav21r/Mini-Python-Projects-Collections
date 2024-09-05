@@ -20,3 +20,14 @@ Mini-Python-Projects-Collections/
 - `requirements.txt`: A file listing the project's dependencies.
 - `.gitignore`: Specifies intentionally untracked files to ignore.
 - `LICENSE`: The MIT license file for this project.
+
+## Functionality
+
+The `wifi_qrcode.py` script does the following:
+
+1. Provides a graphical user interface for inputting WiFi network details.
+2. Allows the user to input the SSID, security type, and password.
+3. Generates a QR code image based on the input.
+4. Saves the generated QR code image in the same directory as the script.
+
+## Requirements

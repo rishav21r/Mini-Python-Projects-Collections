@@ -31,3 +31,10 @@ The `wifi_qrcode.py` script does the following:
 4. Saves the generated QR code image in the same directory as the script.
 
 ## Requirements
+
+This project requires the `qrcode` library with PIL support for image handling. To install the requirements, use:
+
+```
+pip install -r requirements.txt
+```
+

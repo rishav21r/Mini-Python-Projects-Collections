@@ -71,3 +71,22 @@ python wifi_qrcode.py
 4. This string is then used to generate a QR code using the `qrcode` library.
 5. The QR code is saved as an image file named after the SSID.
 
+## Error Handling
+The script includes basic error handling:
+
+- If the SSID is empty, an error message will prompt the user to provide it.
+- If the selected security type is WPA or WEP and the password field is left empty, an error message will be displayed.
+- Unexpected errors during QR code generation are caught and displayed to the user.
+
+## Customization
+You can customize the WiFi QR Code Generator by modifying the following in wifi_qrcode.py:
+
+* Add more options for security types or validations.
+* Modify the default image settings like QR code size, color, etc.
+* Change the directory where the images are saved.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request to improve this project.
+
+## License
+This project is open source and available under the MIT License.

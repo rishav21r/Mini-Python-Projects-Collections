@@ -56,9 +56,12 @@ python wifi_qrcode.py
 7. The generated QR code will be saved in the same directory with the filename `{SSID}_wifi_qr.png`.
 
 ## GUI Screenshots
-1. WiFi Network Input
+### 1. WiFi Network Input
+![WiFi QR Code Generator](./images/GUI_wfifqr.png)
 
-2. Generated QR Code
+### 2. Generated QR Code
+![Generated WiFi QR Code](./images/My_WIFI_5G_wifi_qr.png)
+
 
 ## How it works
 
@@ -67,3 +70,4 @@ python wifi_qrcode.py
 3. When the "Generate QR Code" button is clicked, the script creates a WiFi configuration string.
 4. This string is then used to generate a QR code using the `qrcode` library.
 5. The QR code is saved as an image file named after the SSID.
+

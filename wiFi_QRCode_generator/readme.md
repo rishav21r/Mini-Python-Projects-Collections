@@ -38,6 +38,28 @@ This project requires the `qrcode` library with PIL support for image handling. 
 pip install -r requirements.txt
 ```
 
+## Usage
+1. Ensure you have Python installed on your system.
+2. Clone this repository or download the project files.
+3. Navigate to the wifi_qrcode_generator directory.
+4. Install the required dependencies using the command mentioned in the Requirements section.
+5. Run the script using the following command:
+```
+python wifi_qrcode.py
+```
+6. A graphical user interface will appear where you can:
+ * Enter the WiFi SSID (network name).
+ * Select the security type (WPA, WEP, or no password).
+ * Enter the WiFi password (if required).
+ * Click "Generate QR Code" to create the QR code.
+
+7. The generated QR code will be saved in the same directory with the filename `{SSID}_wifi_qr.png`.
+
+## GUI Screenshots
+1. WiFi Network Input
+
+2. Generated QR Code
+
 ## How it works
 
 1. The script uses `tkinter` to create a simple graphical user interface for input.

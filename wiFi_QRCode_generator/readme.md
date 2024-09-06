@@ -38,3 +38,10 @@ This project requires the `qrcode` library with PIL support for image handling. 
 pip install -r requirements.txt
 ```
 
+## How it works
+
+1. The script uses `tkinter` to create a simple graphical user interface for input.
+2. The user enters the WiFi network details.
+3. When the "Generate QR Code" button is clicked, the script creates a WiFi configuration string.
+4. This string is then used to generate a QR code using the `qrcode` library.
+5. The QR code is saved as an image file named after the SSID.

@@ -1,0 +1,14 @@
+# Python specific ignores
+__pycache__/
+*.py[cod]
+
+# Ignore CSV and JSON files generated during testing
+*.csv
+*.json
+
+# Ignore environment files
+.env
+
+# Ignore IDE files
+.vscode/
+.idea/

@@ -1,0 +1,8 @@
+
+---
+
+### **`requirements.txt`**
+
+```text
+# Requirements for CSV to JSON Converter
+tkinter

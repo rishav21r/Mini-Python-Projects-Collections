@@ -35,4 +35,14 @@ This project requires the `tkinter` library, which is part of the Python standar
 
 ```bash
 pip install -r requirements.txt
+```
 
+## Usage
+* Ensure you have Python installed on your system.
+* Navigate to the csv_to_json directory.
+* Install the required dependencies using the command mentioned in the Requirements section.
+* Run the script using the following command:
+
+```bash
+python csvtojason.py
+```

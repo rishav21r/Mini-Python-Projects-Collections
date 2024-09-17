@@ -59,3 +59,14 @@ You can customize the script by modifying the following in `csvtojason.py`:
 * Adjust the default directory where the JSON file is saved.
 * Extend the script to support additional file formats if needed.
 
+## Error Handling
+The script includes basic error handling:
+
+* It shows a warning if the user does not select a CSV or JSON file.
+* Unexpected errors are caught and displayed in a pop-up window.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+This project is open source and available under the [MIT License](LICENSE).

@@ -68,3 +68,10 @@ The script will:
 - Display the image.
 - Print a confirmation message with the saved image filename.
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](../LICENSE).

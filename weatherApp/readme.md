@@ -87,3 +87,11 @@ Mini-Python-Projects-Collections/
   
 - Make your changes to the codebase.
 - Commit and push your changes to your forked repository.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](../LICENSE).

@@ -86,7 +86,9 @@ You can customize the WiFi QR Code Generator by modifying the following in wifi_
 * Change the directory where the images are saved.
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request to improve this project.
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-This project is open source and available under the MIT License.
+
+This project is open source and available under the [MIT License](../LICENSE).

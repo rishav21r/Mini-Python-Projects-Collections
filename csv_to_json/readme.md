@@ -38,11 +38,12 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-* Ensure you have Python installed on your system.
-* Navigate to the csv_to_json directory.
-* Install the required dependencies using the command mentioned in the Requirements section.
-* Run the script using the following command:
+1. Ensure you have Python installed on your system. 
+2. Navigate to the csv_to_json directory. 
+3. Install the required dependencies using the command mentioned in the Requirements section. 
+4. Run the script using the following command:
 
 ```bash
 python csvtojason.py
 ```
+5. A popup window will appear, allowing you to select the input CSV file and choose where to save the output JSON file.

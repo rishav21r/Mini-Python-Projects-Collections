@@ -47,3 +47,15 @@ pip install -r requirements.txt
 python csvtojason.py
 ```
 5. A popup window will appear, allowing you to select the input CSV file and choose where to save the output JSON file.
+
+## How it works
+1. The script uses tkinter to create a simple GUI for file selection and pop-up notifications.
+2. The user selects a CSV file, and the script converts it into JSON format.
+3. The resulting JSON file is saved in the location specified by the user.
+
+## Customization
+You can customize the script by modifying the following in `csvtojason.py`:
+* Change the file dialog prompts or add validation for specific CSV structures.
+* Adjust the default directory where the JSON file is saved.
+* Extend the script to support additional file formats if needed.
+
